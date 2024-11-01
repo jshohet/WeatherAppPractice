@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D2343FFE2CD5049C00ABFAA9 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D2343FFD2CD5049C00ABFAA9 /* Config.xcconfig */; };
+		D23440062CD5091A00ABFAA9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D23440052CD5091200ABFAA9 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D27D98482CCE93C700FCD0A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,14 +29,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2343FFD2CD5049C00ABFAA9 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		D23440052CD5091200ABFAA9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D27D98372CCE93C600FCD0A5 /* WeatherAppPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27D98472CCE93C700FCD0A5 /* WeatherAppPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27D98512CCE93C700FCD0A5 /* WeatherAppPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D23440042CD5066200ABFAA9 /* Exceptions for "WeatherAppPractice" folder in "WeatherAppPractice" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D27D98362CCE93C600FCD0A5 /* WeatherAppPractice */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D27D98392CCE93C600FCD0A5 /* WeatherAppPractice */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D23440042CD5066200ABFAA9 /* Exceptions for "WeatherAppPractice" folder in "WeatherAppPractice" target */,
+			);
 			path = WeatherAppPractice;
 			sourceTree = "<group>";
 		};
@@ -72,13 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2343FF92CD3E40400ABFAA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D27D982E2CCE93C600FCD0A5 = {
 			isa = PBXGroup;
 			children = (
+				D23440052CD5091200ABFAA9 /* .gitignore */,
 				D27D98392CCE93C600FCD0A5 /* WeatherAppPractice */,
 				D27D984A2CCE93C700FCD0A5 /* WeatherAppPracticeTests */,
 				D27D98542CCE93C700FCD0A5 /* WeatherAppPracticeUITests */,
+				D2343FF92CD3E40400ABFAA9 /* Frameworks */,
 				D27D98382CCE93C600FCD0A5 /* Products */,
+				D2343FFD2CD5049C00ABFAA9 /* Config.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +225,9 @@
 			);
 			mainGroup = D27D982E2CCE93C600FCD0A5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D2343FFC2CD3E48F00ABFAA9 /* XCRemoteSwiftPackageReference "sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D27D98382CCE93C600FCD0A5 /* Products */;
 			projectDirPath = "";
@@ -212,6 +245,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23440062CD5091A00ABFAA9 /* .gitignore in Resources */,
+				D2343FFE2CD5049C00ABFAA9 /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +425,7 @@
 		};
 		D27D985C2CCE93C700FCD0A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2343FFD2CD5049C00ABFAA9 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,11 +435,15 @@
 				DEVELOPMENT_TEAM = 59WV3QF254;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherAppPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +468,15 @@
 				DEVELOPMENT_TEAM = 59WV3QF254;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherAppPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +602,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2343FFC2CD3E48F00ABFAA9 /* XCRemoteSwiftPackageReference "sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/open-meteo/sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = D27D982F2CCE93C600FCD0A5 /* Project object */;
 }
